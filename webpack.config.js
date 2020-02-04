@@ -1,7 +1,5 @@
 const path = require('path');
 
-const HtmlWebpackPlugin = require('html-webpack-plugin');
-
 module.exports = {
     entry: './index.js',
     output: {
@@ -9,7 +7,10 @@ module.exports = {
         filename: 'bundle.js',
         publicPath: ''
     },
-    module: { 
+    devServer: {
+        contentBase: './dist'
+    },
+    module: {
         rules: [
             { 
                 test: /\.scss$/,
@@ -25,20 +26,8 @@ module.exports = {
                         loader: 'sass-loader'
                     }
                 ]
-            },
-            {
-                test: /\.(png|jpe?g|gif|svg|woff|woff2|eot|ttf)$/,
-                loader: 'url-loader?limit=8000&name=images/[name].[ext]' 
             }
         ]
-    },
-    plugins: [ 
-        new HtmlWebpackPlugin({
-            template: __dirname + '/2_2_basic_typography.html',
-            filename: 'index.html',
-            inject: 'body'
-        })
-    ]
-
+    }
 };
 

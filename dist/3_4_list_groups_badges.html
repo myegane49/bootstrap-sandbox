@@ -5,15 +5,15 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.1/css/bootstrap.min.css" integrity="sha384-WskhaSGFgHYWDcbwN70/dfYBj47jz9qbsMId/iRN3ewGhXQFZCSftd1LZCfmhktB"
-        crossorigin="anonymous">
+    <!-- <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.1/css/bootstrap.min.css" integrity="sha384-WskhaSGFgHYWDcbwN70/dfYBj47jz9qbsMId/iRN3ewGhXQFZCSftd1LZCfmhktB"
+        crossorigin="anonymous"> -->
 
     <title>Bootstrap Sandbox</title>
 </head>
 
 <body>
     <header>
-        <h1 class="display-3 text-center my-4">Sizing & Borders</h1>
+        <h1 class="display-3 text-center my-4">List Groups & Badges</h1>
         <div class="container">
             <div class="row">
                 <div class="col-md-3">
@@ -85,73 +85,91 @@
     </header>
 
     <div class="container">
-        <!--##################START HERE####################-->
+        <!--################START HERE##################-->
 
-        <!-- WIDTH CLASSES -->
-        <div class="bg-success p-3">Width 25%</div>
-        <div class="bg-success p-3">Width 50%</div>
-        <div class="bg-success p-3">Width 75%</div>
-        <div class="bg-success p-3">Width 100%</div>
-        <div class="bg-success p-3">Width Auto</div>
+        <!-- LIST GROUP -->
+        <ul>
+            <li>My List Item One</li>
+            <li>My List Item Two</li>
+            <li>My List Item Three</li>
+            <li>My List Item Four</li>
+            <li>My List Item Five</li>
+        </ul>
 
-        <br>
-        <br>
+        <!-- LIST GROUP WITH LINKS -->
+        <ul>
+            <a href="#">My List Item One</a>
+            <a href="#">My List Item Two</a>
+            <a href="#">My List Item Three</a>
+            <a href="#">My List Item Four</a>
+            <a href="#">My List Item Five</a>
+        </ul>
 
-        <!-- HEIGHT CLASSES -->
-        <div>
-            <div class="bg-primary d-inline-block">Height 25%</div>
-            <div class="bg-primary d-inline-block">Height 50%</div>
-            <div class="bg-primary d-inline-block">Height 75%</div>
-            <div class="bg-primary d-inline-block">Height 100%</div>
-            <div class="bg-primary d-inline-block">Height Auto</div>
-        </div>
 
-        <br>
-        <br>
+        <!-- CONTEXTUAL CLASSES -->
+        <ul>
+            <li>Regular List Item</li>
+            <li>Primary List Item</li>
+            <li>Secondary List Item</li>
+            <li>Success List Item</li>
+            <li>Info List Item</li>
+            <li>Warning List Item</li>
+            <li>Danger List Item</li>
+            <li>Light List Item</li>
+            <li>Dark List Item</li>
+        </ul>
 
-        <!-- BORDERS -->
-        <div class="p-3 mb-2 bg-light">Regular</div>
-        <div class="p-3 mb-2 bg-light">Border Top</div>
-        <div class="p-3 mb-2 bg-light">Border Bottom</div>
-        <div class="p-3 mb-2 bg-light">Border Right</div>
-        <div class="p-3 mb-2 bg-light">Border Left</div>
+        <!-- FLUSH LIST GROUP -->
+        <ul>
+            <li>My List Item One</li>
+            <li>My List Item Two</li>
+            <li>My List Item Three</li>
+            <li>My List Item Four</li>
+            <li>My List Item Five</li>
+        </ul>
 
-        <br>
-        <br>
 
-        <!-- BORDER COLORS -->
-        <div class="p-3 mb-2 bg-light">Primary</div>
-        <div class="p-3 mb-2 bg-light">Secondary</div>
-        <div class="p-3 mb-2 bg-light">Success</div>
-        <div class="p-3 mb-2 bg-light">Info</div>
-        <div class="p-3 mb-2 bg-light">Warning</div>
-        <div class="p-3 mb-2 bg-light">Danger</div>
-        <div class="p-3 mb-2 bg-light">Light</div>
-        <div class="p-3 mb-2 bg-light">Dark</div>
-        <div class="p-3 mb-2 bg-light">White</div>
+        <!-- BADGE -->
+        <ul>
+            <li>My List Item One</li>
+            <li>My List Item Two</li>
+            <li>My List Item Three</li>
+            <li>My List Item Four</li>
+            <li>My List Item Five</li>
+        </ul>
 
-        <br>
-        <br>
-
-        <!-- BORDER RADIUS -->
-        <div class="p-3 mb-2 bg-light">Rounded</div>
-        <div class="p-3 mb-2 bg-light">Rounded Top</div>
-        <div class="p-3 mb-2 bg-light">Rounded Bottom</div>
-        <div class="p-3 mb-2 bg-light">Rounded Right</div>
-        <div class="p-3 mb-2 bg-light">Rounded Left</div>
-        <div class="p-3 mb-2 bg-light">Rounded Circle</div>
-        <div class="p-3 mb-2 bg-light">Dark</div>
+        <!-- BREADCRUMB -->
+        <ol>
+            <li>Home</li>
+        </ol>
+        <ol>
+            <li>
+                <a href="#">Home</a>
+            </li>
+            <li>Users</li>
+        </ol>
+        <ol>
+            <li>
+                <a href="#">Home</a>
+            </li>
+            <li>
+                <a href="#">Users</a>
+            </li>
+            <li>Brad</li>
+        </ol>
 
     </div>
     <!-- ./container -->
     <div style="margin-top:500px;"></div>
 
-    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
+    <!-- <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
         crossorigin="anonymous"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js" integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49"
         crossorigin="anonymous"></script>
     <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.1/js/bootstrap.min.js" integrity="sha384-smHYKdLADwkXOn1EmN1qk/HfnUcbVRZyYmZ4qpPea6sjB/pTJ0euyQp0Mk8ck+5T"
-        crossorigin="anonymous"></script>
+        crossorigin="anonymous"></script> -->
+
+        <script src="./bundle.js"></script>
 </body>
 
 </html>
